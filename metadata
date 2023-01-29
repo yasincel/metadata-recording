@@ -1,0 +1,13 @@
+pragma solidity ^0.8.0;
+
+contract Metadata {
+    string public metadata;
+
+    function setMetadata(string memory _metadata) public {
+        metadata = _metadata;
+    }
+
+    function getMetadata() public view returns (string memory) {
+        return metadata;
+    }
+}
